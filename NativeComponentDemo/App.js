@@ -16,8 +16,8 @@ export default class App extends Component {
         </Text>
         <EditText
           style={styles.editText}
-          hint="First Name"
-          singleLine
+          hint="Enter Your Name"
+          fontSize={20}
         />
       </View>
     );
@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   editText: {
-    width: 200,
-    height: 40,
+    alignSelf: 'stretch',
+    height: 200,
+    margin: 10,
   }
 });

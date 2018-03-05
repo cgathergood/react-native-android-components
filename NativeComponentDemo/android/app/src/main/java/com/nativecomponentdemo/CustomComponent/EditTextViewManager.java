@@ -1,14 +1,12 @@
 package com.nativecomponentdemo.CustomComponent;
 
-import android.widget.EditText;
-
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
 import javax.annotation.Nullable;
 
-public class EditTextViewManager extends SimpleViewManager<EditText> {
+public class EditTextViewManager extends SimpleViewManager<CustomEditText> {
 
     private static final String REACT_CLASS = "EditText";
 
@@ -18,17 +16,17 @@ public class EditTextViewManager extends SimpleViewManager<EditText> {
     }
 
     @Override
-    protected EditText createViewInstance(ThemedReactContext reactContext) {
-        return new EditText(reactContext);
+    protected CustomEditText createViewInstance(ThemedReactContext reactContext) {
+        return new CustomEditText(reactContext);
     }
 
     @ReactProp(name = "hint")
-    public void setTextHint(EditText editText, @Nullable String hint) {
-        editText.setHint(hint);
+    public void setTextHint(CustomEditText customEditText, @Nullable String hint) {
+        customEditText.setHint(hint);
     }
 
-    @ReactProp(name = "singleLine", defaultBoolean = true)
-    public void setSingleLine(EditText editText, Boolean isSingleLine) {
-        editText.setSingleLine(isSingleLine);
+    @ReactProp(name = "fontSize", defaultFloat = 14f)
+    public void setBorderRadius(CustomEditText customEditText, float fontSize) {
+        customEditText.setFontSize(fontSize);
     }
 }

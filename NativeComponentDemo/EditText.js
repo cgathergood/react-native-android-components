@@ -7,7 +7,7 @@ var iface = {
   propTypes:{
     ...ViewPropTypes, // include the default view properties
     hint: PropTypes.string,
-    singleLine: PropTypes.bool,
+    fontSize: PropTypes.number,
   }
 };
 
