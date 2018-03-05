@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   editText: {
-    alignSelf: 'stretch',
+    width: 300,
     height: 200,
     margin: 10,
   }
