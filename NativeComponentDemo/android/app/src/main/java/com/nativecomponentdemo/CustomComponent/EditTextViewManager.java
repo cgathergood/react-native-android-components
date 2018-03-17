@@ -26,7 +26,7 @@ public class EditTextViewManager extends SimpleViewManager<CustomEditText> {
     }
 
     @ReactProp(name = "fontSize", defaultFloat = 14f)
-    public void setBorderRadius(CustomEditText customEditText, float fontSize) {
+    public void setFontSize(CustomEditText customEditText, float fontSize) {
         customEditText.setFontSize(fontSize);
     }
 }

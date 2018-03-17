@@ -11,12 +11,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Creating Android Components for React Native
-        </Text>
+        <Text>Bridging Native Components</Text>
         <EditText
           style={styles.editText}
-          hint="Enter Your Name"
+          hint="Floating Title"
           fontSize={20}
         />
       </View>
